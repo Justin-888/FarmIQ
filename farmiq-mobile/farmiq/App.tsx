@@ -4,6 +4,7 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import DashboardScreen from './screens/DashboardScreen';
 import ChatbotScreen from './screens/ChatbotScreen';
+import WeatherScreen from './screens/WeatherScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ export default function App() {
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
         <Stack.Screen name="Chatbot" component={ChatbotScreen} />
+        <Stack.Screen name="Weather" component={WeatherScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

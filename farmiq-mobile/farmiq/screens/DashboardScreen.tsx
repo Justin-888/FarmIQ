@@ -10,10 +10,10 @@ export default function DashboardScreen({ route, navigation }: any) {
       <Text style={styles.tier}>Plan: {user.subscriptionTier}</Text>
 
       <View style={styles.grid}>
-        <TouchableOpacity style={styles.card}>
-          <Text style={styles.cardIcon}>🌤</Text>
-          <Text style={styles.cardText}>Weather</Text>
-        </TouchableOpacity>
+        <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Weather')}>
+  <Text style={styles.cardIcon}>🌤</Text>
+  <Text style={styles.cardText}>Weather</Text>
+</TouchableOpacity>
         <TouchableOpacity style={styles.card}>
           <Text style={styles.cardIcon}>🌱</Text>
           <Text style={styles.cardText}>Crop Advisor</Text>
