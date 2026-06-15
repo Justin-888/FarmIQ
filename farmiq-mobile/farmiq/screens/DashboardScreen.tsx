@@ -18,10 +18,10 @@ export default function DashboardScreen({ route, navigation }: any) {
           <Text style={styles.cardIcon}>🌱</Text>
           <Text style={styles.cardText}>Crop Advisor</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card}>
-          <Text style={styles.cardIcon}>🐛</Text>
-          <Text style={styles.cardText}>Pest Detection</Text>
-        </TouchableOpacity>
+        <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('PestDetection')}>
+  <Text style={styles.cardIcon}>🐛</Text>
+  <Text style={styles.cardText}>Pest Detection</Text>
+</TouchableOpacity>
         <TouchableOpacity style={styles.card}>
           <Text style={styles.cardIcon}>💧</Text>
           <Text style={styles.cardText}>Irrigation</Text>
